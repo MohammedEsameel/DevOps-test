@@ -42,7 +42,6 @@ app.wsgi_app = DispatcherMiddleware(app.wsgi_app, {
 
 def home():
     return get_input()
-app.run()
-
+app.run(host='0.0.0.0', debug=True)
 
 
