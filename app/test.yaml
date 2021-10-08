@@ -1,0 +1,32 @@
+schemaVersion: '2.0.0'
+commandTests:
+  - name: "python"
+    command: "which"
+    args: ["python"]
+    expectedOutput: ["/usr/local/bin/python"]
+
+  - name: "python3"
+    command: "which"
+    args: ["python3"]
+    expectedOutput: ["/usr/local/bin/python3"]
+
+  - name: "Simple Echo"
+    command: "bash"
+    args:
+        - -c
+        - |
+           echo testing
+
+fileExistenceTests:
+- name: 'supervisord.conf'
+  path: '/etc'
+  shouldExist: true
+
+- name: 'kill.py'
+  path: '/etc'
+  shouldExist: true
+
+- name: 'API.py'
+  path: '/'
+  shouldExist: true
+
