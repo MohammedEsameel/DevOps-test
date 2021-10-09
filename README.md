@@ -131,7 +131,7 @@ eval $(minikube -p minikube docker-env)
 ----------------------------------------------------------------------------------------------------------------------
 ## Notice 
 You will find OPA example , i just put it with this project to Mark it in TODO list
-TODO list
-* Helm Testing
-* Helm Hooks
-* OPA
+### TODO list
+- Helm Testing
+- Helm Hooks
+- OPA
