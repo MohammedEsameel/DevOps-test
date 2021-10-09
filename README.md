@@ -17,13 +17,11 @@ after pull the image from docker hub, check the image name
 docker images
 ```
 you should see this content 
-| ------------------------------------------------------------------------------------------------------------ |
-| REPOSITORY                                         TAG               IMAGE ID       CREATED          SIZE    |
-| mohammedismel/devops-test                          latest            f6c7eb1e7b3d   29 minutes ago   191MB   |
-| python                                             3.8-slim-buster   514a7722ffa9   3 days ago       114MB   |       
-| ------------------------------------------------------------------------------------------------------------ |
+REPOSITORY                                         TAG               IMAGE ID       CREATED          SIZE    
+mohammedismel/devops-test                          latest            f6c7eb1e7b3d   29 minutes ago   191MB   
+python                                             3.8-slim-buster   514a7722ffa9   3 days ago       114MB          
 
-
+----------------------------------------------------------------------------------------------------------------------
 Stage 1
 *you need to download the project
 ```
