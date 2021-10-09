@@ -7,6 +7,7 @@ I will assume that you have installed
 
 This Project contains simple Pyhton application exposed by flask , you can use get http request the you will gain some fake json data
 
+----------------------------------------------------------------------------------------------------------------------
 ##Installation<br />
 you need to pull the docker container image of that application from docker hub
 ```
@@ -18,12 +19,12 @@ docker images
 ```
 You should see this content 
 ```
-REPOSITORY                                         TAG               IMAGE ID       CREATED          SIZE  <br />  
-mohammedismel/devops-test                          latest            f6c7eb1e7b3d   29 minutes ago   191MB <br />  
-python                                             3.8-slim-buster   514a7722ffa9   3 days ago       114MB <br />        
+REPOSITORY                                         TAG               IMAGE ID       CREATED          SIZE    
+mohammedismel/devops-test                          latest            f6c7eb1e7b3d   29 minutes ago   191MB   
+python                                             3.8-slim-buster   514a7722ffa9   3 days ago       114MB         
 ```
 ----------------------------------------------------------------------------------------------------------------------
-##Testing <br />
+##Testing 
 You need to download the project
 ```
 git clone https://github.com/MohammedEsameel/DevOps-test.git
@@ -36,6 +37,8 @@ then i prepare simple test.yaml file
 ```
 container-structure-test test --image mohammedismel/devops-test:latest --config DevOps-test/app/test.yaml
 ```
+
+----------------------------------------------------------------------------------------------------------------------
 ##Deploy in Kube Cluster<br />
 Build the chart using helm commands
 ```
@@ -53,6 +56,7 @@ NOTES:
   http://myapp.net/
 ```
 
+----------------------------------------------------------------------------------------------------------------------
 ##Get the Results
 Now you should check that assigned by nginx ingress using this line 
 ```
@@ -121,7 +125,7 @@ You will see
 NAME      	NAMESPACE	REVISION	UPDATED                               	STATUS  	CHART           	APP VERSION
 myfirstapp	default  	1       	2021-10-09 21:32:43.34866459 +0300 +03	deployed	test-chart-0.1.0	1.16.0     
 ```
-
+----------------------------------------------------------------------------------------------------------------------
 ##Tshoot
 if you face some issues with Minikube image pulling you just type this command 
 ```
