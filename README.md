@@ -7,22 +7,22 @@ I will assume that you have installed
 
 This Project contains simple Pyhton application exposed by flask , you can use get http request the you will gain some fake json data
 
-- Stage 1 (Pull the Image)
+- Stage 1 (Pull the Image)<br />
 you need to pull the docker container image of that application from docker hub
 ```
 docker pull mohammedismel/devops-test:latest
 ```
-after pull the image from docker hub, check the image name 
+After pull the image from docker hub, check the image name 
 ```
 docker images
 ```
-you should see this content 
-REPOSITORY                                         TAG               IMAGE ID       CREATED          SIZE    
-mohammedismel/devops-test                          latest            f6c7eb1e7b3d   29 minutes ago   191MB   
-python                                             3.8-slim-buster   514a7722ffa9   3 days ago       114MB          
+You should see this content <br />
+REPOSITORY                                         TAG               IMAGE ID       CREATED          SIZE  <br />  
+mohammedismel/devops-test                          latest            f6c7eb1e7b3d   29 minutes ago   191MB <br />  
+python                                             3.8-slim-buster   514a7722ffa9   3 days ago       114MB <br />        
 
 ----------------------------------------------------------------------------------------------------------------------
-- Stage 2 (Testing the Container)
+- Stage 2 (Testing the Container)<br />
 *you need to download the project
 ```
 git clone https://github.com/MohammedEsameel/DevOps-test.git
@@ -35,19 +35,19 @@ then i prepare simple test.yaml file
 ```
 container-structure-test test --image mohammedismel/devops-test:latest --config DevOps-test/app/test.yaml
 ```
-- Stage 3 (Deploy in Kube Cluster)
+- Stage 3 (Deploy in Kube Cluster)<br />
 Build the chart using helm commands
 ```
 helm install myfirstapp DevOps-test
 ```
 you will see this message 
 
-NAME: myfirstapp
-LAST DEPLOYED: Sat Oct  9 21:32:43 2021
-NAMESPACE: default
-STATUS: deployed
-REVISION: 1
-NOTES:
+NAME: myfirstapp<br />
+LAST DEPLOYED: Sat Oct  9 21:32:43 2021<br />
+NAMESPACE: default<br />
+STATUS: deployed<br />
+REVISION: 1<br />
+NOTES:<br />
 1. Get the application URL by running these commands:
   http://myapp.net/
 
