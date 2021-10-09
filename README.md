@@ -8,7 +8,7 @@ I will assume that you have installed
 This Project contains simple Pyhton application exposed by flask , you can use get http request the you will gain some fake json data
 
 ----------------------------------------------------------------------------------------------------------------------
-##Installation<br />
+## Installation
 you need to pull the docker container image of that application from docker hub
 ```
 docker pull mohammedismel/devops-test:latest
@@ -39,7 +39,7 @@ container-structure-test test --image mohammedismel/devops-test:latest --config 
 ```
 
 ----------------------------------------------------------------------------------------------------------------------
-##Deploy in Kube Cluster<br />
+## Deploy in Kube Cluster
 Build the chart using helm commands
 ```
 helm install myfirstapp DevOps-test
@@ -57,7 +57,7 @@ NOTES:
 ```
 
 ----------------------------------------------------------------------------------------------------------------------
-##Get the Results
+## Get the Results
 Now you should check that assigned by nginx ingress using this line 
 ```
 kube get ing
@@ -126,15 +126,15 @@ NAME      	NAMESPACE	REVISION	UPDATED                               	STATUS  	CH
 myfirstapp	default  	1       	2021-10-09 21:32:43.34866459 +0300 +03	deployed	test-chart-0.1.0	1.16.0     
 ```
 ----------------------------------------------------------------------------------------------------------------------
-##Tshoot
+## Tshoot
 if you face some issues with Minikube image pulling you just type this command 
 ```
 eval $(minikube -p minikube docker-env)
 ```
 - Then pull the image for local docker repositry again and then install the helm chart.
-
----
-Notice you will find OPA example , i just put it with this project to Mark it in TODO list
+----------------------------------------------------------------------------------------------------------------------
+## Notice 
+You will find OPA example , i just put it with this project to Mark it in TODO list
 TODO list
 * Helm Testing
 * Helm Hooks
