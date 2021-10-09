@@ -7,8 +7,7 @@ I will assume that you have installed
 
 This Project contains simple Pyhton application exposed by flask , you can use get http request the you will gain some fake json data
 
-first you need to pull the docker container image of that application from docker hum
-
+-Stage1: you need to pull the docker container image of that application from docker hub
 ```
 docker pull mohammedismel/devops-test:latest
 ```
@@ -22,7 +21,7 @@ mohammedismel/devops-test                          latest            f6c7eb1e7b3
 python                                             3.8-slim-buster   514a7722ffa9   3 days ago       114MB          
 
 ----------------------------------------------------------------------------------------------------------------------
-Stage 1
+Stage 2
 *you need to download the project
 ```
 git clone https://github.com/MohammedEsameel/DevOps-test.git
@@ -36,7 +35,7 @@ then i prepare simple test.yaml file
 container-structure-test test --image mohammedismel/devops-test:latest --config DevOps-test/app/test.yaml
 ```
 stage 2 build the chart using helm commands
-```
+```bash
 helm install myfirstapp DevOps-test
 ```
 you will see this message 
