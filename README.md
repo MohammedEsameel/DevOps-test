@@ -1,6 +1,6 @@
 # DevOps-test
 This is Simple Helm chart for personal uasage 
-I will assume that u have installed 
+I will assume that you have installed 
 - Helm 3.7
 - Minikube v1.23.2 
 - Docker ce
@@ -22,6 +22,13 @@ REPOSITORY                                         TAG               IMAGE ID   
 mohammedismel/devops-test                          latest            f6c7eb1e7b3d   29 minutes ago   191MB
 python                                             3.8-slim-buster   514a7722ffa9   3 days ago       114MB          
 
+
+
+Stage 1
+*you need to download the project
+```
+git clone https://github.com/MohammedEsameel/DevOps-test.git
+```
 check the containr by installing this tool
 ```
 curl -LO https://storage.googleapis.com/container-structure-test/latest/container-structure-test-linux-amd64 && chmod +x container-structure-test-linux-amd64 && sudo mv container-structure-test-linux-amd64 /usr/local/bin/container-structure-test
@@ -29,12 +36,6 @@ curl -LO https://storage.googleapis.com/container-structure-test/latest/containe
 then i prepare simple test.yaml file 
 ```
 container-structure-test test --image mohammedismel/devops-test:latest --config DevOps-test/app/test.yaml
-```
-
-Stage 1
-*you need to download the project
-```
-git clone https://github.com/MohammedEsameel/DevOps-test.git
 ```
 stage 2 build the chart using helm commands
 ```
