@@ -48,6 +48,32 @@ NOTES:
 1. Get the application URL by running these commands:
   http://myapp.net/
 
+now you should check that assigned by nginx ingress using this line 
+```
+kube get ing
+```
+first you will see the ip address empty like message below
+NAME   CLASS   HOSTS       ADDRESS   PORTS   AGE
+api    nginx   myapp.net             80      49s
+
+If you still dostn see the IP address you should check if ingress is enable in minikube , by defualt it is disablesed , you should enable ingress controller Pod it using this command 
+```
+minikube addons enable ingress
+```
+wait a while then you will see the address assigned 
+NAME   CLASS   HOSTS       ADDRESS        PORTS   AGE
+api    nginx   myapp.net   192.168.49.2   80      7m
+
+
+now you should add the domain name to the hosts file in your system
+```
+vim /etc/hosts
+```
+and add this line 
+
+```
+192.168.49.2 myapp.net
+```
 to check the application API type this lines
 ```
 curl  http://myapp.net/
@@ -93,7 +119,6 @@ you will see
 
 NAME      	NAMESPACE	REVISION	UPDATED                               	STATUS  	CHART           	APP VERSION
 myfirstapp	default  	1       	2021-10-09 21:32:43.34866459 +0300 +03	deployed	test-chart-0.1.0	1.16.0     
-
 
 
 Tshoot
