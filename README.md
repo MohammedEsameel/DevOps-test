@@ -5,7 +5,7 @@ I will assume that you have installed
 - Minikube v1.23.2 
 - Docker ce
 
-This Project contains simple Pyhton application exposed by flask , you can use get http request the you will gain some fake json data
+This Project contains simple Pyhton application exposed by flask , you can use get http request the you will gain some random json data
 
 ----------------------------------------------------------------------------------------------------------------------
 ## Installation
