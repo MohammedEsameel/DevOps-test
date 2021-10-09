@@ -10,9 +10,6 @@ FROM python:3.8-slim-buster
 RUN apt-get update
 RUN apt-get upgrade -y
 
-# Install Some usefull tools inside the container , it's optional
-RUN apt-get install -y procps vi iproute2 curl
-
 # To collect data and loging 
 RUN pip3 install prometheus-client
 # To expose API  
