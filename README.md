@@ -25,7 +25,7 @@ curl -LO https://storage.googleapis.com/container-structure-test/latest/containe
 ```
 then i prepare simple test.yaml file 
 ```
-container-structure-test test --image api-cat/latest:latest --config DevOps-test/app/test.yaml
+container-structure-test test --image mohammedismel/devops-test:latest --config DevOps-test/app/test.yaml
 ```
 
 Stage 1
