@@ -1,5 +1,5 @@
 # DevOps-Test
-This is simple helm chart for personal uasage 
+This is a simple helm chart for personal uasage 
 I will assume that you have installed the following tools
 - Helm 3.7
 - Minikube v1.23.2 
