@@ -1,6 +1,9 @@
 # DevOps-test
 This is Simple Helm chart for personal uasage 
-I will assume that u have installed helm 3.7 , Minikube v1.23.2 , docker ce
+I will assume that u have installed 
+- Helm 3.7
+- Minikube v1.23.2 
+- Docker ce
 
 This Project contains simple Pyhton application exposed by flask , you can use get http request the you will gain some fake json data
 
