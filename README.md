@@ -9,7 +9,7 @@ This Project contains simple Pyhton application exposed by flask , you can use g
 
 ----------------------------------------------------------------------------------------------------------------------
 ## Installation
-you need to pull the docker container image of that application from docker hub
+You need to pull the docker container image of that application from docker hub
 ```
 docker pull mohammedismel/devops-test:latest
 ```
@@ -29,11 +29,11 @@ You need to download the project
 ```
 git clone https://github.com/MohammedEsameel/DevOps-test.git
 ```
-check the containr by installing this tool
+Check the containr by installing this tool
 ```
 curl -LO https://storage.googleapis.com/container-structure-test/latest/container-structure-test-linux-amd64 && chmod +x container-structure-test-linux-amd64 && sudo mv container-structure-test-linux-amd64 /usr/local/bin/container-structure-test
 ```
-then i prepare simple test.yaml file 
+Then i prepare simple test.yaml file 
 ```
 container-structure-test test --image mohammedismel/devops-test:latest --config DevOps-test/app/test.yaml
 ```
