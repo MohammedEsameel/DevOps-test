@@ -5,11 +5,11 @@ I will assume that you have installed the following tools
 - Minikube v1.23.2 
 - Docker ce
 
-This Project contains simple Pyhton application exposed by flask , you can use get http request the you will gain some random json data
+This Project contains simple Pyhton application exposed by Flask , you can use get http request the you will gain some random json data
 
 ----------------------------------------------------------------------------------------------------------------------
 ## Installation
-You need to pull the docker container image of that application from docker hub
+You need to pull the Docker container image of that application from Docker hub
 ```
 docker pull mohammedismel/devops-test:latest
 ```
