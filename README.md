@@ -7,7 +7,8 @@ I will assume that you have installed
 
 This Project contains simple Pyhton application exposed by flask , you can use get http request the you will gain some fake json data
 
--Stage1: you need to pull the docker container image of that application from docker hub
+- Stage 1 (Pull the Image)
+you need to pull the docker container image of that application from docker hub
 ```
 docker pull mohammedismel/devops-test:latest
 ```
@@ -21,7 +22,7 @@ mohammedismel/devops-test                          latest            f6c7eb1e7b3
 python                                             3.8-slim-buster   514a7722ffa9   3 days ago       114MB          
 
 ----------------------------------------------------------------------------------------------------------------------
-Stage 2
+- Stage 2 (Testing the Container)
 *you need to download the project
 ```
 git clone https://github.com/MohammedEsameel/DevOps-test.git
@@ -34,8 +35,9 @@ then i prepare simple test.yaml file
 ```
 container-structure-test test --image mohammedismel/devops-test:latest --config DevOps-test/app/test.yaml
 ```
-stage 2 build the chart using helm commands
-```bash
+- Stage 3 (Deploy in Kube Cluster)
+Build the chart using helm commands
+```
 helm install myfirstapp DevOps-test
 ```
 you will see this message 
@@ -49,7 +51,9 @@ NOTES:
 1. Get the application URL by running these commands:
   http://myapp.net/
 
-now you should check that assigned by nginx ingress using this line 
+
+- Stage 4 (Get the Results)
+Now you should check that assigned by nginx ingress using this line 
 ```
 kube get ing
 ```
