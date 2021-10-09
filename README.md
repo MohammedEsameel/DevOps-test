@@ -1,4 +1,4 @@
-# DevOps-test
+# DevOps-Test
 This is Simple Helm chart for personal uasage 
 I will assume that you have installed 
 - Helm 3.7
