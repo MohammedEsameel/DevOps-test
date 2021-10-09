@@ -40,7 +40,7 @@ container-structure-test test --image mohammedismel/devops-test:latest --config 
 
 ----------------------------------------------------------------------------------------------------------------------
 ## Deploy in Kube Cluster
-Build the chart using helm commands
+Install the chart using helm commands
 ```
 helm install myfirstapp DevOps-test
 ```
