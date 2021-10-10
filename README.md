@@ -1,11 +1,11 @@
 # DevOps-Test
-This is a simple helm chart for personal uasage 
+This is a simple helm chart for personal usage 
 I will assume that you have installed the following tools
 - Helm 3.7
 - Minikube v1.23.2 
 - Docker ce
 
-This Project contains simple Pyhton application exposed by Flask , you can use GET http request then you will gain some random json data
+This Project contains simple Pyhton application exposed by Flask , you can use GET http request then you will receive some random json data
 
 ----------------------------------------------------------------------------------------------------------------------
 ## Installation
